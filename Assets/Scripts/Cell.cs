@@ -8,6 +8,9 @@ public class Node
     private float value;
     private int ID;
     private List<Edge> Edges;
+    private Edge CorrectEdge;
+    private float ManhattanDistance;
+
 
     public Node (float _value, int _ID, List<Edge> _Edges) 
     {
@@ -52,6 +55,24 @@ public class Node
         Edges = _edges;
     }
 
+    public void SetCorrectEdge(Edge _correctEdge)
+    {
+        CorrectEdge = _correctEdge;
+    }
 
+    public Edge GetCorrectEdge()
+    {
+        return CorrectEdge;
+    }
+
+    public void SetManhattanDistance(float _manhattanDistance)
+    {
+        ManhattanDistance = _manhattanDistance;
+    }
+
+    public float GetManhattanDistance()
+    {
+        return ManhattanDistance;
+    }
 
 }
